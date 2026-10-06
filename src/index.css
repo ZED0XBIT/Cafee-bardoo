@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-alfa {
+    font-family: 'Alfa Slab One', serif;
+  }
+  .font-oswald {
+    font-family: 'Oswald', sans-serif;
+  }
+  .font-barlow {
+    font-family: 'Barlow', sans-serif;
+  }
+}
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  /* Prevent any horizontal layout overflow on mobile screens */
+  #site-header {
+    max-width: 100vw;
+    box-sizing: border-box;
+  }
+
+  main {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  /* Ensure touch targets are easily clickable */
+  button, a {
+    touch-action: manipulation;
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 22s linear infinite;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #1c1108;
+}
+::-webkit-scrollbar-thumb {
+  background: #6c190e;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8a2418;
+}
+

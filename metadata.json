@@ -1,0 +1,6 @@
+{
+  "name": "DOWNTOWN - Bardo & El Aouina",
+  "description": "Official interactive web app for DOWNTOWN Café & Lounge in Bardo and El Aouina, Tunis. Features morning breakfast to late-night lounge menus, table reservations, live time mode toggle, and location guides.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
